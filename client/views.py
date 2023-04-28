@@ -7,8 +7,9 @@ from rest_framework.decorators import api_view
 def register_user(request):
     staff_id=request.data["staff_id"]
     nin=request.data["nin"]
+    email=request.data['email']
     first_name=request.data["first_name"]
-    surname=request.data["surname"]
+    last_name=request.data["last_name"]
     middle_name=request.data["middle_name"]
     gender=request.data["gender"]
     birthday=request.data["birthday"]
@@ -18,3 +19,4 @@ def register_user(request):
     city=request.data["city"]
     state=request.data["state"]
     course=request.data["course"]
+
