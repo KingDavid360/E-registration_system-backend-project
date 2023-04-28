@@ -8,7 +8,7 @@ from .models import ClientModel
 
 @api_view(['post'])
 @csrf_exempt
-def register_user(request):
+def register_client(request):
     staff_id=request.data["staff_id"]
     nin=request.data["nin"]
     email=request.data['email']

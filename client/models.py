@@ -17,7 +17,7 @@ class ClientModel(models.Model):
     city=models.CharField(max_length=15, blank=True)
     state=models.CharField(max_length=15, blank=True)
     grade_level=models.CharField(max_length=10, blank=True)
-    
+    course=models.CharField(max_length=10,blank=True)
 
     def __str__(self):
         return self.staff_id
