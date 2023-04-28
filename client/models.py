@@ -8,11 +8,7 @@ class ClientModel(models.Model):
     first_name=models.CharField(max_length=15, blank=True)
     last_name=models.CharField(max_length=15, blank=True)
     middle_name=models.CharField(max_length=15, blank=True)
-    gender_option = [
-        ("Male", "Male"),
-        ("Female", "Female"),
-    ]
-    gender=models.CharField(max_length=10, blank=True, choices=gender_option)
+    gender=models.CharField(max_length=10, blank=True)
     phone_number=models.CharField(max_length=11,blank=True)
     birthday=models.DateField(blank=True)
     institution=models.CharField(max_length=15, blank=True)
@@ -20,7 +16,8 @@ class ClientModel(models.Model):
     address=models.TextField(blank=True)
     city=models.CharField(max_length=15, blank=True)
     state=models.CharField(max_length=15, blank=True)
-   
+    grade_level=models.CharField(max_length=10, blank=True)
+    
 
     def __str__(self):
         return self.staff_id
