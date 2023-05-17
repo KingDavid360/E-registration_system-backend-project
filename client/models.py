@@ -20,5 +20,5 @@ class ClientModel(models.Model):
     course=models.CharField(max_length=10,blank=True)
 
     def __str__(self):
-        return self.staff_id
+        return self.nin
 

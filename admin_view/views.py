@@ -3,12 +3,12 @@ from django.db import IntegrityError
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
-from .models import AdminProfile
+from .models import Course
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from rest_framework.authtoken.models import Token
 from client.models import ClientModel
-from .serializer import AdminSerializer
+# from .serializer import AdminSerializer
 
 @api_view(['post'])
 @csrf_exempt

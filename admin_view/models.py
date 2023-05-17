@@ -1,10 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class AdminProfile(models.Model):
-    owner = models.ForeignKey(User, related_name='admin_account', on_delete=models.CASCADE,null=True)
-    email = models.CharField(max_length=100, blank=True)
+class Course(models.Model):
+    course = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
-        return self.email
+        return self.course
 
